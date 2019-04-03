@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>Depth Test Page</title>
+</head>
+
+<h1>This is a Depth Test Page</h1>
+<p>I have <%=@list.size %> friends:</p>
+
+<ul>
+
+  <%@list.each do |person|%>
+    <li><%=person%></li>
+  <%end%>
+
+
+</ul>
+
+</html>
