@@ -2,6 +2,21 @@
 
 <p>There are <%=@events.size %> events:</p>
 
+
+<% @events.each do |event| %>
+
+  <h2><%=event.name %></h2>
+  <p><%=event.description %></p>
+  <strong>When: </strong><%=event.starts_at %><br>
+  <strong>Where: </strong><%=event.location %><br>
+  <strong>Price: </strong><%=event.price %><br>
+
+
+
+
+<% end %>
+
+<br><br><br><br>
 <ul>
 
   <% @events.each do |event| %>
@@ -19,3 +34,4 @@
   <li>Hackathon</li>
   <li>Kata Camp</li>
 </ul>
+
