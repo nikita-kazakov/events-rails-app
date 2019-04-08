@@ -1,37 +1,15 @@
-<h1>Events</h1>
 
-<p>There are <%=@events.size %> events:</p>
+
+<p><%=pluralize(@events.size, 'Event') %>:</p>
 
 
 <% @events.each do |event| %>
 
   <h2><%=event.name %></h2>
-  <p><%=event.description %></p>
+  <p><%=truncate(event.description, length: 35, separator: '') %></p>
   <strong>When: </strong><%=event.starts_at %><br>
   <strong>Where: </strong><%=event.location %><br>
-  <strong>Price: </strong><%=event.price %><br>
-
-
-
-
+  <strong>Price: </strong><%=format_price(event) %><br>
 <% end %>
 
-<br><br><br><br>
-<ul>
-
-  <% @events.each do |event| %>
-    <li><strong><%=event.name %></strong>
-    in <%=event.location %>
-    : <%=number_to_currency(event.price) %>
-    </li>
-  <% end %>
-
-</ul>
-
-<p>This is a static list</p>
-<ul>
-  <li>Bugsmash</li>
-  <li>Hackathon</li>
-  <li>Kata Camp</li>
-</ul>
 
