@@ -1,0 +1,6 @@
+
+  <h1><%=@event.name %></h1>
+  <p><%=@event.description%></p>
+  <strong>When: </strong><%=@event.starts_at %><br>
+  <strong>Where: </strong><%=@event.location %><br>
+  <strong>Price: </strong><%=format_price(@event) %><br>
