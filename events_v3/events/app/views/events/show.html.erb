@@ -9,31 +9,16 @@
 
 
 <body>
-<h1>Hello world!</h1>
+<h1>Single Event Page</h1>
 
 
+<%event = @single %>
 
-    <%@events.each do |event| %>
     <p><strong>Event:</strong> <%=event.name %></p>
     <p><strong>Location:</strong> <%=event.location %></p>
     <p><strong>Price:</strong> <%= format_price(event) %></p>
     <p><strong>Description:</strong> <%= event.description %></p>
     <p><strong>Started on:</strong> <%= time_ago_in_words(event.starts_at) %> ago</p>
-    <%=link_to "All Events", events_path %>
-    <br>
-    <br>
-    <% end %>
-
-<h2>Links to detailed pages</h2>
-
-  <ul>
-    <%@events.each do |event| %>
-    <li><%=link_to event.name, event %></li>
-
-    <% end %>
-  </ul>
-
-
 
 </body>
 </html>
