@@ -1,0 +1,2 @@
+class Fastrspec < ApplicationRecord
+end
