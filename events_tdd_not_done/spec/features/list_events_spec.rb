@@ -1,9 +1,9 @@
 require 'rails_helper'
-describe "Viewing the list of events" do
+describe "Viewing the list of events_tdd_not_done" do
 
 
 
-  it "shows the events" do
+  it "shows the events_tdd_not_done" do
 
     event1 = Event.create(name: "BugSmash",
                           location: "PG-13",
