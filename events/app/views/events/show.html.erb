@@ -5,5 +5,4 @@
   <strong>Where: </strong><%=@event.location %><br>
   <strong>Price: </strong><%=format_price(@event) %><br>
   <strong><%=link_to "All Events", root_path %></strong> |
-  <%=link_to "Edit", edit_event_path %>
-  <p>End event</p>
+  <%=link_to "Edit", edit_event_path(@event) %>
