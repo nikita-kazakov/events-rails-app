@@ -1,7 +1,7 @@
 
 
 <p><%=pluralize(@events.size, 'Event') %>:</p>
-
+<%= link_to "Add new event", new_event_path %>
 
 <% @events.each do |event| %>
 
