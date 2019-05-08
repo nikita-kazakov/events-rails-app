@@ -13,11 +13,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
-  def update
-    @event = Event.find(params[:id])
-    @event.update(event_params)
-    redirect_to @event
-  end
+
 
   def new
     @event = Event.new
@@ -36,9 +32,15 @@ class EventsController < ApplicationController
     redirect_to events_url
   end
 
+  def update
+    @event = Event.find(params[:id])
+    @event.update(event_params)
+    redirect_to @event
+  end
+
 private
   def event_params
-    params.require(:event).permit(:name, :description, :location, :price, :starts_at)
+    params.require(:event).permit(:name, :description, :location, :price, :starts_at, :capacity, :image_file_name)
   end
 
 end

@@ -2,14 +2,19 @@
 
 <p><%=pluralize(@events.size, 'Event') %>:</p>
 <%= link_to "Add new event", new_event_path %>
+</br>
 
-<% @events.each do |event| %>
+  <% @events.each do |event| %>
+
 
   <h2><%= link_to event.name, event_path(event.id)%></h2>
+  <%=image_for(event)%><br>
+  <strong><%= pluralize(event.capacity, 'spot') %></strong>
   <p><%=truncate(event.description, length: 35, separator: '') %></p>
   <strong>When: </strong><%=event.starts_at %><br>
   <strong>Where: </strong><%=event.location %><br>
   <strong>Price: </strong><%=format_price(event) %><br>
+
 <% end %>
 
 
