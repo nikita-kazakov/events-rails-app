@@ -1,0 +1,11 @@
+<% if @event.errors.any? %>
+
+  <p>OOPS! There are <%=pluralize(@event.errors.count, "error")%>:</p>
+
+  <ul>
+    <%=@event.errors.full_messages.each do |message| %>
+      <li><%=message %></li>
+    <%end %>
+  </ul>
+
+<%end %>
