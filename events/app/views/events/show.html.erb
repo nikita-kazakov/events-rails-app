@@ -6,5 +6,6 @@
   <strong>Where: </strong><%=@event.location %><br>
   <strong>Price: </strong><%=format_price(@event) %><br>
   <strong>Capacity: </strong> <%=pluralize(@event.capacity, "spots")%> <br>
+  <%=link_to "Who's Registered", event_registrations_path(@event) %> |
   <%=link_to "Edit", edit_event_path(@event) %> |
   <%=link_to "Delete", event_path(@event), method: :delete, data: {confirm: 'are you sure?'} %>

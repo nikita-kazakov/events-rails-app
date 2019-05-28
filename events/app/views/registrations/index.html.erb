@@ -1,0 +1,9 @@
+<h1>Registrations from <%=link_to @event.name, @event %></h1>
+
+<ol id="registrations">
+  <%@registrations.each do |r| %>
+  <li>
+    <%= mail_to(r.email, r.name) %> <%=r.how_heard %>
+  </li>
+  <%end %>
+</ol>

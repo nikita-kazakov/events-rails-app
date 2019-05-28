@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :registrations
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root "events#index"
@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   #patch "events/:id" => "events#update"
   #get "events/new" => "events#new"
 
-  resources :events
+  resources :events do
+    resources :registrations
+  end
+
 end
