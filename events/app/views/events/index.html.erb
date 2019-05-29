@@ -9,7 +9,7 @@
 
   <h2><%= link_to event.name, event_path(event.id)%></h2>
   <%=image_for(event)%><br>
-  <strong><%= pluralize(event.capacity, 'spot') %></strong>
+  <strong><%= pluralize(event.spots_left, 'spot') %> available</strong>
   <p><%=truncate(event.description, length: 35, separator: '') %></p>
   <strong>When: </strong><%=event.starts_at %><br>
   <strong>Where: </strong><%=event.location %><br>
