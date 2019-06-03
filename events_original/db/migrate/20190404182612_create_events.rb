@@ -1,6 +1,6 @@
 class CreateEvents < ActiveRecord::Migration[5.0]
   def change
-    create_table :events do |t|
+    create_table :events_tdd_not_done do |t|
       t.string :name
       t.string :location
       t.decimal :price

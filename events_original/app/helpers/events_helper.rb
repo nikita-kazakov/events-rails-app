@@ -1,4 +1,4 @@
-#Helpers for events.
+#Helpers for events_tdd_not_done.
 #Insert tutorial section #5 - Nikita.
 module EventsHelper
 

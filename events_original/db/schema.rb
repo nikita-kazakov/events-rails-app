@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20190404220842) do
 
-  create_table "events", force: :cascade do |t|
+  create_table "events_tdd_not_done", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
     t.decimal  "price"
