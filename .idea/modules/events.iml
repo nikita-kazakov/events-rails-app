@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$/../../events" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../events">
+      <sourceFolder url="file://$MODULE_DIR$/../../events/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../events/spec" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/.bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/components" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/log" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/public/packs" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/vendor/bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../events/vendor/cache" />
+    </content>
+    <orderEntry type="jdk" jdkName="asdf: 2.4.4" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="0" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/../../events/config/locales" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>
